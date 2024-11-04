@@ -7,7 +7,7 @@ from dependencies import distribute_products
 
 
 router = APIRouter()
-db = RedisDict(host="127.0.0.1", port=6379)
+db = RedisDict(host="redis", port=6379)
 
 
 @router.post("/x/")

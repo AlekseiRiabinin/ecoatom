@@ -2,7 +2,7 @@ import redis
 
 
 # connect to Redis
-db = redis.Redis(host="localhost", port=6379)
+db = redis.Redis(host="redis", port=6379)
 
 # flush all data
 db.flushall()

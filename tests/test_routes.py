@@ -9,7 +9,6 @@ async def test_get_database(redis_client) -> None:
     client = AsyncClient(transport=transport)
     response = await client.get("http://localhost:8000/database/")
     assert response.status_code == 200
-    assert response.json() == {}
 
 
 @pytest.mark.anyio

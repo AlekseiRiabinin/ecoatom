@@ -1,7 +1,7 @@
 from redis_dict import RedisDict
 
 
-db = RedisDict(host="127.0.0.1", port=6379)
+db = RedisDict(host="redis", port=6379)
 
 # loop through the dictionary and print each key-value pair
 for key, val in db.items():

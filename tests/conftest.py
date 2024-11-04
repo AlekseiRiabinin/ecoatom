@@ -10,7 +10,7 @@ client = TestClient(app)
 
 @pytest.fixture(scope="function")
 def redis_client():
-    client = RedisDict(host="localhost", port=6379, db=0)
+    client = RedisDict(host="redis", port=6379, db=0)
     yield client
     client.clear()
 
